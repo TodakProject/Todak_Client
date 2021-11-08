@@ -1,0 +1,25 @@
+@import '/styles/common_mixin.module.scss';
+
+.intro-section{
+    @include flexSpaceBetween;
+    width: 1310px;
+    height: calc(100vh - 60px);
+    padding-top: 200px;
+    .intro-title{
+        @include vFlex;
+        width: 50%;
+        h1{
+            @include h1;
+            line-height: 80px;
+        
+        }
+        a{
+            @include btn;
+            margin-top: 36px;
+        }
+    }
+    .introImg-container{
+        width: 50%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+@import '/styles/common_mixin.module.scss';
+
+.nav-header{
+    @include flexSpaceBetween;
+    align-items: center;
+    width: 1310px;
+    height: 60px;
+    .logo-container{
+        width:20%;
+        img{
+            width: 120px;
+            height: 30px;
+            object-fit: contain;
+        };
+    }
+    
+
+    .login-container{
+        @include flexEnd;
+        width: 10%;
+
+    }
+
+}

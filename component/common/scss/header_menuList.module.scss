@@ -1,0 +1,14 @@
+@import "/styles/common_mixin.module.scss";
+
+.menuList-container {
+  width: 50%;
+  .menu-list {
+    @include flexEnd;
+    li {
+      margin-left: 16px;
+      a {
+        color: $font2;
+      }
+    }
+  }
+}

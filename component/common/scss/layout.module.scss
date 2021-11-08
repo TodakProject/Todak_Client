@@ -1,0 +1,7 @@
+@import '/styles/common_mixin.module.scss';
+
+
+.container{
+    @include vFlexCenter;
+    width: 100%;
+}

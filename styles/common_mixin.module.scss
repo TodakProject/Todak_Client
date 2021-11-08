@@ -1,0 +1,89 @@
+//Color
+$mainColor:#6AC2CE;
+$font:#333333;
+$font2:#666666;
+$font3:#999999;
+$font4:#8e8e8e;
+$border:#e5e5e5;
+$bg1:#fefefe;
+$bg2:#fafafa;
+$bg3:#fdfdfd;
+//Font Weight
+$thin:100;
+$light:300;
+$regular:400;
+$medium:500;
+$bold:700;
+
+//Common Mixin
+@mixin flex {
+	display: flex;
+}
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+}
+@mixin flexSpaceBetween {
+	display: flex;
+	justify-content: space-between;
+}
+@mixin flexSpaceAround {
+	display: flex;
+	justify-content: space-Around;
+}
+@mixin flexStart {
+	display: flex;
+	justify-content: flex-start;
+}
+@mixin flexEnd {
+	display: flex;
+	justify-content: flex-End;
+}
+@mixin flexAlignCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin flexMiddle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin vFlex {
+	display: flex;
+	flex-direction: column;
+}
+@mixin vFlexCenter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@mixin vFlexAlignCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+@mixin vFlexMiddle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin h1 {
+	font-size: 42px;
+	font-weight: $bold;
+	letter-spacing: -0.025em;
+}
+
+@mixin btn {
+	@include flexAlignCenter;
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: $mainColor;
+	color:#fefefe;
+	font-size: 24px;
+	font-weight: $medium;
+}
+	
